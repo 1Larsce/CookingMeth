@@ -1,0 +1,15 @@
+@startuml shabu
+
+class DrugStore {
+  - chemicalComposition: String
+  - purity: double
+  - color: String
+  - productionCost: double
+  + Chemical(composition: String, purity: double, color: String, cost: double)
+  + getChemicalComposition(): String
+  + getPurity(): double
+  + getColor(): String
+  + calculateProductionCost(): double
+}
+
+@enduml
